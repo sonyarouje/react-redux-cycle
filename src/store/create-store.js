@@ -4,9 +4,11 @@ import { createCycleMiddleware } from 'redux-cycles';
 import { run } from '@cycle/run';
 import { makeHTTPDriver } from '@cycle/http';
 import { timeDriver } from '@cycle/time';
-import reducers from '../reducers';
-import cycles from '../cycles';
-import logger from './action-logger';
+import logger from 'redux-logger';
+
+import reducers from './reducers';
+import cycles from './cycles';
+
 
 const cycleMiddleware = createCycleMiddleware();
 const { makeActionDriver, makeStateDriver } = cycleMiddleware;

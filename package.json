@@ -30,18 +30,19 @@
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.3.0",
     "webpack": "^3.4.1",
-    "webpack-dev-server": "^2.6.1" 
+    "webpack-dev-server": "^2.6.1"
   },
   "dependencies": {
+    "@cycle/http": "^13.3.0",
+    "@cycle/run": "^3.1.0",
+    "@cycle/time": "^0.8.0",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.4",
     "redux": "^3.6.0",
-    "@cycle/http": "^13.3.0",
-    "@cycle/run": "^3.1.0",
-    "@cycle/time": "^0.8.0",
     "redux-cycles": "^0.4.1",
-    "xstream": "^10.9.0",
-    "prop-types": "^15.5.10"
+    "redux-logger": "^3.0.6",
+    "xstream": "^10.9.0"
   }
 }
