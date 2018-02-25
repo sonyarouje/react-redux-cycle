@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import SearchPresentational from './search-presentational';
 import Action from './action';
 import SearchResults from '../search-results/search-results';
+import Selectors from './selector';
 
 const Search = ({ onSearchClick, searchString }) => {
   console.log(searchString); //eslint-disable-line
@@ -23,7 +24,7 @@ Search.propTypes = {
 
 function mapStateToProps(state) {
   return {
-    searchString: state.searchReducer.searchString,
+    searchString: Selectors.searchString(state),
   };
 }
 
