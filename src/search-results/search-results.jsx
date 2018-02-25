@@ -13,14 +13,16 @@ const SearchResults = ({ searchResults }) => {
 };
 
 SearchResults.propTypes = {
-  searchResults: PropTypes.array.isRequired,
+  searchResults: PropTypes.array,
+};
+
+SearchResults.defaultProps = {
+  searchResults: [],
 };
 
 function mapStateToProps(state) {
   return {
-    searchResults: state.searchReducer.currentResult.items
-        ? state.searchReducer.currentResult.items
-        : [],
+    searchResults: state.searchReducer.currentResult.items,
   };
 }
 
